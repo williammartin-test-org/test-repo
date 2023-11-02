@@ -1,0 +1,16 @@
+name: Release Download Triage
+
+on:
+  workflow_dispatch:
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download Release
+      run: gh release download -O QAuxiliary.apk --repo cinit/QAuxiliary  --pattern '*arm64.apk'
+      env:
+        GH_TOKEN: ${{ github.token }}
+    - name: Stat file
+      run: stat QAuxiliary.apk
