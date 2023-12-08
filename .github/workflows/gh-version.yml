@@ -1,0 +1,8 @@
+name: GH Version
+run-name: GH Version
+on: [workflow_run]
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh version
