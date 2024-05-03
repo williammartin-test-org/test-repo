@@ -1,0 +1,15 @@
+name: Job Name Testing
+
+on:
+  push:
+
+jobs:
+  update-in-progress-issues:
+    name: Emoji Test 😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅😅
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Emoji echo
+        shell: bash
+        run: echo "Emojis!"
