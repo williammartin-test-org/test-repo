@@ -1,0 +1,3 @@
+[submodule "go-gh"]
+	path = go-gh
+	url = https://github.com/cli/go-gh
